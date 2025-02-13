@@ -42,8 +42,8 @@ export default function App() {
                 <Shield className="w-12 h-12 text-purple-500" />
                 <h3 className="text-xl font-semibold">Back Others</h3>
                 <p className="text-slate-300">
-                  Believe in someone's success? Stake on their journey and share
-                  their rewards.
+                  Believe in someone&apos;s success? Stake on their journey and
+                  share their rewards.
                 </p>
               </div>
               <div className="bg-slate-800 p-6 rounded-xl space-y-4">
