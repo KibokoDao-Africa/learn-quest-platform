@@ -3,6 +3,7 @@
 import { Book, Trophy, Timer } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import { useState } from "react";
+import Footer from "../../../components/Footer";
 
 export default function Profile() {
   const [isConnected, setIsConnected] = useState(false);
@@ -83,6 +84,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

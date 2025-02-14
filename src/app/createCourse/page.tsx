@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
 
 export default function CreateCourse() {
   const [isConnected, setIsConnected] = useState(false);
@@ -55,6 +56,7 @@ export default function CreateCourse() {
           </button>
         </form>
       </div>
+      <Footer />
     </section>
   );
 }

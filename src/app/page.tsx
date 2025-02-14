@@ -6,6 +6,7 @@ import Profile from "../app/profile/page";
 import Courses from "../app/courses/page";
 import CreateCourse from "../app/createCourse/page";
 import { Trophy, Shield, Coins } from "lucide-react";
+import Footer from "../../components/Footer";
 
 export default function App() {
   const [isConnected, setIsConnected] = useState(false);
@@ -56,6 +57,7 @@ export default function App() {
               </div>
             </div>
           </div>
+          <Footer />
         </section>
         {/* Render components based on pathname */}
         {pathname === "/profile" && <Profile />}

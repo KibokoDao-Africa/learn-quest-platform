@@ -4,6 +4,7 @@ import { Book, Users, Coins } from "lucide-react";
 import Link from "next/link";
 import Navbar from "../../../components/Navbar";
 import { useState } from "react";
+import Footer from "../../../components/Footer";
 
 export default function Courses() {
   const [isConnected, setIsConnected] = useState(false);
@@ -67,6 +68,7 @@ export default function Courses() {
           ))}
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
