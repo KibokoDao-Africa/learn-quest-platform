@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { Wallet, Book, User, Plus, Menu, X } from "lucide-react";
+import { Wallet, Book, User, Plus, } from "lucide-react";
 import SplashSchoolImg from "../public/images/splash_school.png"
 import Image from "next/image";
 
@@ -12,10 +12,10 @@ interface NavbarProps {
 }
 
 export default function Navbar({ isConnected, setIsConnected }: NavbarProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleConnect = () => setIsConnected(true);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  // const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   // useEffect(() => {
   //   const img = new Image(); // ✅ Runs only on the client
   // }, []);
