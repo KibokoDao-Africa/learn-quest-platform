@@ -10,7 +10,7 @@ export default function CreateCourse() {
   return (
     <section className="max-w-full">
         <Navbar isConnected={isConnected} setIsConnected={setIsConnected} />
-      <div className="max-w-2xl mx-auto pt-4 space-y-8">
+      <div className="max-w-2xl mx-auto pt-4 pb-8 space-y-8">
 
         <h1 className="text-3xl font-bold">Create a New Course</h1>
         <form className="space-y-6">
