@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Wallet, Book, User, Plus, Menu, X } from "lucide-react";
+import SplashSchoolImg from "../public/images/splash_school.png"
+import Image from "next/image";
 
 interface NavbarProps {
   isConnected: boolean;
@@ -14,31 +16,24 @@ export default function Navbar({ isConnected, setIsConnected }: NavbarProps) {
 
   const handleConnect = () => setIsConnected(true);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  // useEffect(() => {
+  //   const img = new Image(); // ✅ Runs only on the client
+  // }, []);
 
   return (
     <nav className="bg-slate-800 border-b border-slate-700 py-3">
-      <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center space-x-2">
-          <Book className="w-8 h-8 text-purple-500" />
-          <span className="text-xl font-bold text-white">LearnQuest</span>
+      <div className="container  px-4 flex items-center justify-between h-16">
+        <Link href="/" className="flex items-center space-x-2 p-3">
+          <Image
+            src={SplashSchoolImg}
+            alt="LearnQuest Logo"
+            width={70} // Specify width
+            height={70} // Specify height
+          />
+          <span className="text-xl font-bold text-white">Splash Academy</span>
         </Link>
 
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden text-white focus:outline-none"
-        >
-          {isMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
-        </button>
-
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } lg:flex lg:items-center lg:space-x-6 `}
-        >
+        <div className="flex justify-evenly items-center space-x-4 ">
           <Link
             href="/courses"
             className="group flex flex-col items-center lg:space-y-1 text-white hover:text-purple-400"
