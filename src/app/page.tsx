@@ -55,6 +55,37 @@ export default function App() {
                   your supporters.
                 </p>
               </div>
+              <div className="bg-slate-800 p-6 rounded-xl space-y-4 md:col-span-3">
+                <h3 className="text-2xl font-semibold">About Splash Academy</h3>
+                <p className="text-slate-300">
+                  Splash Academy is a revolutionary platform that combines
+                  learning with blockchain technology. Our mission is to
+                  incentivize education through staking and rewards. Whether you
+                  are a learner or a supporter, you can benefit from our unique
+                  system that promotes commitment and success.
+                </p>
+              </div>
+              <div className="bg-slate-800 p-6 rounded-xl space-y-4 md:col-span-3">
+                <h3 className="text-2xl font-semibold">How It Works</h3>
+                <p className="text-slate-300">
+                  Enroll in courses by staking cryptocurrency. Complete the
+                  courses to earn back your stake along with additional rewards.
+                  Support others by staking on their success and share in their
+                  achievements. Our platform ensures that everyone is motivated
+                  to learn and succeed.
+                </p>
+              </div>
+              <div className="bg-slate-800 p-6 rounded-xl space-y-4 md:col-span-3">
+                <h3 className="text-2xl font-semibold">Join Us Today</h3>{" "}
+                <p className="text-slate-300">
+                  Ready to take the next step in your learning journey? Enroll
+                  in a course today and start earning rewards for your
+                  dedication. Or, if you have expertise to share, become an
+                  instructor and create your own course. Inspire others and earn
+                  rewards for teaching. Join Splash Academy now and be a part of
+                  the future of education.
+                </p>
+              </div>
             </div>
           </div>
           <Footer />
