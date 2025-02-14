@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Wallet, Book, User, Plus, } from "lucide-react";
-import SplashSchoolImg from "../public/images/splash_school.png"
+import SplashSchoolImg from "../public/images/Blue White Yellow Creative  Online Course Logo Transparent.png"
 import Image from "next/image";
 
 interface NavbarProps {
@@ -27,8 +27,8 @@ export default function Navbar({ isConnected, setIsConnected }: NavbarProps) {
           <Image
             src={SplashSchoolImg}
             alt="LearnQuest Logo"
-            width={70} // Specify width
-            height={70} // Specify height
+            width={80} // Specify width
+            height={80} // Specify height
           />
           <span className="text-xl font-bold text-white">Splash Academy</span>
         </Link>

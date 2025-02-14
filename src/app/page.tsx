@@ -88,13 +88,13 @@ export default function App() {
               </div>
             </div>
           </div>
-          <Footer />
         </section>
         {/* Render components based on pathname */}
         {pathname === "/profile" && <Profile />}
         {pathname === "/courses" && <Courses />}
         {pathname === "/createCourse" && <CreateCourse />}
       </main>
+          <Footer />
     </div>
   );
 }
